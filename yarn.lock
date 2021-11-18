@@ -3833,6 +3833,13 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
+oakdex-pokedex@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/oakdex-pokedex/-/oakdex-pokedex-0.4.5.tgz#ac26770ac11c7d0b3b7d0902550471d4a3a63963"
+  integrity sha512-jljasig0kS2g6t1PQ1eA+QP4UIQmixxUWs3xZWNO5BDHXSGTxkBtvI66y1ygiSkZ91IwoGDpyCmwkISGc8XyuQ==
+  dependencies:
+    jsonschema "^1.2.4"
+
 oauth-sign@~0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.9.0.tgz#47a7b016baa68b5fa0ecf3dee08a85c679ac6455"
@@ -4084,6 +4091,15 @@ pixelmatch@^4.0.2:
   integrity sha1-j0fc7FARtHe2fbA8JDvB8wheiFQ=
   dependencies:
     pngjs "^3.0.0"
+
+pokedex-promise-v2@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/pokedex-promise-v2/-/pokedex-promise-v2-3.3.2.tgz#298e3bfe069f2d3c288c9d9300f5f20726b08ded"
+  integrity sha512-Jz6ayPmJKtvOxB+jxAvF0auQBkiphOHITDkUpexR55ncx5EfHd+UHNN1r6ROl5A5s9NFoZ5eZU6tgxPjbGnOMQ==
+  dependencies:
+    axios "^0.21.1"
+    memory-cache "^0.2.0"
+    p-map "^4.0.0"
 
 pngjs@^3.0.0, pngjs@^3.3.3:
   version "3.4.0"
