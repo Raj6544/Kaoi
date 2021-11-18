@@ -13,6 +13,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        const text = Do you mean *help*
-        .M(reply)
-    }
+        const text = `Do you mean *help*`
+        M.reply(text)
+    })
+}
