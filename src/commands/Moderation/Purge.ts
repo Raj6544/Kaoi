@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
         if (!(M.groupMetadata?.owner.split('@')[0] === M.sender.jid.split('@')[0]))
             return void M.reply('Only the group owner can use this command')
         if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
-            return void M.reply("I can't remove without being an admin")
+            return void M.reply("make me admin first, baka")
         if (!this.purgeSet.has(M.groupMetadata?.id || '')) {
             this.addToPurge(M.groupMetadata?.id || '')
             return void M.reply(
@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
             if (user !== M.sender.jid && user !== this.client.user.jid)
                 await this.client.groupRemove(M.from, [user]).catch(() => console.log('error removing admin'))
         })
-        await M.reply('Done!').catch(() => console.log('Failed to send message'))
+        await M.reply('Process started!').catch(() => console.log('Failed to send message'))
         this.client.groupLeave(M.from)
     }
 
