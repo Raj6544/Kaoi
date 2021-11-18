@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
 			command: "pokemon",
 			description: `Gives you the data of the given pokemon.`,
 			aliases: ["pkmn"],
-			category: "weeb",
+			category: "anime",
 			usage: `${client.config.prefix}pokemon [name/id]`,
 			baseXp: 50,
 		});
