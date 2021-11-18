@@ -61,6 +61,8 @@
         "mongoose": "^5.12.12",
         "node-cron": "^3.0.0",
         "npm": "^7.17.0",
+        "oakdex-pokedex": "^0.4.5",
+        "pokedex-promise-v2": "^3.3.2",
         "qr-image": "^3.2.0",
         "spotifydl-core": "^0.1.2",
         "ultra-lyrics": "^1.0.3",
