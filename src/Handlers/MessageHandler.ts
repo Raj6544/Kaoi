@@ -73,13 +73,12 @@ export default class MessageHandler {
         const user = await this.client.getUser(M.sender.jid)
         if (user.ban) return void M.reply("You're Banned from using commands.")
         const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
-        if (state) return void M.reply(`❌ This command is disabled${state.reason ? ` for ${state.reason}` : ''}`)
-        if (!command.config?.dm && M.chat === 'dm') return void M.reply('This command can only be used in groups')
+        if (state) return void M.reply(`❌ Ehh, this command is disabled${state.reason ? ` for ${state.reason}` : ''}`)
         if (command.config?.modsOnly && !this.client.config.mods?.includes(M.sender.jid)) {
-            return void M.reply(`Only MODS are allowed to use this command`)
+            return void M.reply(`This command is only for MODS, BAKA!`)
         }
         if (command.config?.adminOnly && !M.sender.isAdmin)
-            return void M.reply(`Only admins are allowed to use this command`)
+            return void M.reply(`This command is only for ADMINS, Baka!`)
         try {
             await command.run(M, this.parseArgs(args))
             if (command.config.baseXp) {
